@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | AbdulAziz</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,20 +13,25 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-btn">Contact</a></li>
         </ul>
     </nav>
 
     <section>
-        <h2 style="font-size: 3rem; margin-bottom: 2rem;">Inquiries</h2>
-        <p>Let's discuss your next project or collaboration.</p>
+        <h2>Get In Touch</h2>
+        <p style="margin-bottom: 2.5rem;">I am available for collaborations and full-stack development projects.</p>
         
         <form class="contact-form">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email Address" required>
             <textarea rows="6" placeholder="Project Details" required></textarea>
-            <button type="submit" class="btn" style="width: fit-content;">Submit Request</button>
+            <button type="submit" class="btn" style="width: fit-content; cursor: pointer; border: none;">Send Message</button>
         </form>
+
+        <div style="margin-top: 3rem;">
+            <p>Direct Email:</p>
+            <a href="mailto:xantrailstudio@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: 600;">xantrailstudio@gmail.com</a>
+        </div>
     </section>
 </body>
 </html>
