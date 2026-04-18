@@ -6,15 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>...</nav> <section>
-        <h1>Get in Touch</h1>
-        <p>Have a project in mind? Let's build something great.</p>
+    <nav>
+        <div class="logo">AM.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 style="font-size: 3rem; margin-bottom: 2rem;">Inquiries</h2>
+        <p>Let's discuss your next project or collaboration.</p>
         
         <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="6" placeholder="Project Details" required></textarea>
+            <button type="submit" class="btn" style="width: fit-content;">Submit Request</button>
         </form>
     </section>
 </body>
