@@ -1,3 +1,6 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
     --bg: #ffffff;
     --surface: #f8fafc;
@@ -12,13 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    /* Apply Poppins globally */
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: var(--bg);
     color: var(--text-main);
-    line-height: 1.5;
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
@@ -60,7 +64,7 @@ nav {
     color: var(--accent);
 }
 
-/* Layout */
+/* Layout and Typography */
 section {
     padding: 8rem 8%;
 }
@@ -69,24 +73,35 @@ h1 {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     font-weight: 800;
     letter-spacing: -2px;
+    line-height: 1.1;
     margin-bottom: 1.5rem;
+}
+
+h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    color: var(--text-muted);
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 2.2rem;
     background: var(--text-main);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    background: var(--accent);
 }
 
 /* Projects Grid */
@@ -100,13 +115,13 @@ h1 {
     padding: 3rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 20px;
+    border-radius: 24px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {
     background: white;
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     border-color: var(--accent);
     box-shadow: var(--shadow);
 }
@@ -122,12 +137,21 @@ h1 {
 input, textarea {
     padding: 1.2rem;
     background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 input:focus, textarea:focus {
     border-color: var(--accent);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    border: none;
 }
